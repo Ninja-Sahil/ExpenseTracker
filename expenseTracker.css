@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: verdana;
+    width: 50%;
+    margin: auto;
+    max-width: 350px;
+    background: #f5f5dc;
+}
+
+header h3{
+    text-align: center;
+    padding: 25px;
+    font-size: 20px;
+}
+
+header p{
+    padding: 10px;
+}
+
+header p span{
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+header ul{
+    margin: 0 10px;
+    list-style: none;
+    display: flex;
+    padding: 13px;
+    justify-content: space-around;
+    box-shadow: 2px 2px 5px grey;
+}
+
+header ul li{
+    flex: 1;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+header ul li:nth-of-type(1){
+    border-right: 1px solid #DCDCDC;
+}
+
+header ul li:nth-of-type(2) span{
+    color: red;
+}
+
+header ul li:nth-of-type(1) span{
+    color: limegreen;
+}
+
+header ul li span{
+    padding: 3px;
+    font-size: 17px;
+    display: block;
+    font-weight: 700;
+}
+
+main h4{
+    font-weight: 500;
+    border-bottom: 1px solid #DCDCDC;
+    margin: 20px 10px 10px 10px;
+}
+
+main ul{
+    list-style: none;
+    margin: 10px;
+}
+
+main ul li{
+    cursor: pointer;
+    text-transform: capitalize;
+    display: flex;
+    margin: 10px 0;
+    padding: 8px;
+    box-shadow: 1px 1px 4px 1px #DCDCDC;
+    justify-content: space-between;
+    position: relative;
+}
+
+main ul li.green{
+    border-right: 5px solid limegreen;
+}
+
+main ul li.red{
+    border-right: 5px solid red;
+}
+
+main ul li button{
+    display: none;
+    border: 0;
+    outline: 0;
+    position: absolute;
+    left : -15px;
+    background: orangered;
+    padding: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    color: #fff;
+    font-weight: bolder;
+}
+
+main ul li:hover button{
+    display: block;
+}
+
+main form{
+    margin: 10px;
+}
+
+main form label{
+    display: block;
+    padding: 8px 0;
+}
+
+main form label span{
+    display: block;
+}
+
+main form input{
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+main form button{
+    border: 0;
+    outline: 0;
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    background: rgb(159,25,229);
+    margin-top: 7px;
+    cursor: pointer;
+}
+
+main form button:hover{
+    opacity: 0.9;
+}
+
+.inactive{
+    display: none;
+}

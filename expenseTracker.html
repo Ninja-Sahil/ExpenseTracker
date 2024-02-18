@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+<link rel="stylesheet" href="expenseTracker.css">
+</head>
+<body>
+    <header>
+        <h3>Expense Tracker</h3>
+        <p>YOUR BALANCE<span>$200.00</span></p>
+        <ul>
+            <li>Income<span>$300.00</span></li>
+            <li>Expense<span>$100.00</span></li>
+        </ul>
+    </header>
+    <main>
+        <h4>History</h4>
+        <ul>
+            <li class="red">Camera<span>-100</span><button>X</button></li>
+            <li class="green">Cash<span>+300</span><button>X</button></li>
+        </ul>
+        <h4>Add new transaction</h4>
+        <form>
+            <label for="text">Text</label>
+            <input type="text" placeholder="Enter text..." id="text" required>
+            <label for="expense">Amount<span>(negative-expense,positive-income)</span></label>
+            <input type="number" placeholder="Enter amount..." id="expense" required>
+            <button type="submit">Add transaction</button>
+        </form>
+    </main>
+    
+    <script src="expenseTracker.js"></script>
+</body>
+</html>
